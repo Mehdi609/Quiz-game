@@ -1,13 +1,124 @@
+/* General Styles */
 body {
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Title */
+.title {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-top: 20px;
+}
+
+/* Loading and Error Messages */
+div {
+  font-size: 1.2rem;
+  color: #ff5722;
+  margin-top: 20px;
+}
+
+/* Quiz Container */
+.quiz-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Question */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Buttons for Answers */
+button {
+  display: block;
+  width: 40%;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+/* Restart Button */
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2196F3;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #1976D2;
+}
+
+a:active {
+  background-color: #1565C0;
+}
+
+/* Dropdown Select */
+.category-select {
+  width: 40%;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  appearance: none;
+  cursor: pointer;
+}
+
+.category-select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Game Over Section */
+.game-over {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.game-over p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quiz-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
 }
